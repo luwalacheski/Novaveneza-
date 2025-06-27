@@ -24,8 +24,8 @@ body {
 }
 
 .button.primary {
-    background-color: #007bff;
-    color: #fff;
+    background-color: # (221,160,221)
+    color: ##DDA0DD
     border: 2px solid #007bff;
 }
 
