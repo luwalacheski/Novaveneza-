@@ -191,7 +191,7 @@ body {
 }
 
 .product-card {
-    background-color: #FFC0CB;
+    background-color: #8B0000;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -218,7 +218,7 @@ body {
 
 .product-card .price {
     font-weight: bold;
-    color: #007bff;
+    color: #8B0000;
     text-align: center;
     margin-bottom: 10px;
 }
