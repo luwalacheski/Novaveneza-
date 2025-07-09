@@ -35,14 +35,14 @@ body {
 }
 
 .button.secondary {
-    background-color: #fff;
+    background-color: #ffc1d5;
     color: ##8B00BE;
     border: 2px solid #007bff;
 }
 
 .button.secondary:hover {
     background-color: #DDA0DD;
-    color: #fff;
+    color: #ffc1d5;
     transform: translateY(-2px);
     box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
 }
