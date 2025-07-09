@@ -36,13 +36,13 @@ body {
 
 .button.secondary {
     background-color: #ffc1d5;
-    color: ##8B00BE;
+    color: #DDA0DD;
     border: 2px solid #007bff;
 }
 
 .button.secondary:hover {
     background-color: #DDA0DD;
-    color: #ffc1d5;
+    color: #DDA0DD;
     transform: translateY(-2px);
     box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
 }
