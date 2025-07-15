@@ -14,21 +14,34 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       padding: 20px;
-      max-width: 500px;
+      max-width: 700px;
       margin: auto;
     }
-    h1 {
+    h1, h2 {
       color: #2c3e50;
     }
     ul {
       padding-left: 20px;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
   <div class="ponto-onibus">
     <h1>Ponto de Ônibus: Linha Flor Da Serra</h1>
-    <p><strong>Localização:</strong> Flor da Serra, Capanema- PR</p>
+    <p><strong>Localização:</strong> Flor da Serra, Capanema - PR</p>
+
     <p><strong>Linhas Atendidas:</strong></p>
     <ul>
       <li>São Pedro</li>
@@ -36,6 +49,19 @@
       <li>Flor da Serra</li>
       <li>Santa Ana</li>
     </ul>
+
     <p><strong>Horários de Funcionamento:</strong></p>
     <ul>
       <li>Seg a Sex: 05:00 às 18:30</li>
+    </ul>
+
+    <h2>Fotos do Ponto</h2>
+    <div class="galeria">
+      <img src="foto1.jpg" alt="Vista frontal do ponto de ônibus">
+      <img src="foto2.jpg" alt="Área de espera coberta">
+      <img src="foto3.jpg" alt="Sinalização do ponto">
+      <img src="foto4.jpg" alt="Ponto de ônibus ao entardecer">
+    </div>
+  </div>
+</body>
+</html>
