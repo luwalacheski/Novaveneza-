@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Localização - Comunidade Nova Veneza</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f0f4f8;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <title>Localização da Comunidade Nova Veneza</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f0f4f8;
+    }
 
-        h1 {
-            color: #2c3e50;
-        }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
 
-        iframe {
-            width: 100%;
-            max-width: 800px;
-            height: 450px;
-            border: none;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-    </style>
+    .mapa {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    iframe {
+      border: 0;
+      width: 90%;
+      height: 500px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-    <h1>Localização da Comunidade Nova Veneza</h1>
-
-    <!-- Substitua o link abaixo pelo mapa do seu local -->
+  <h1>Localização da Comunidade Nova Veneza</h1>
+  <div class="mapa">
     <iframe 
-        src="25°35'11.8"S 53°50'27.9"W" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
+      src="https://www.google.com/maps?q=-25.588333,-53.853222&z=15&output=embed" 
+      allowfullscreen 
+      loading="lazy">
     </iframe>
+  </div>
 </body>
 </html>
