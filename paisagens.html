@@ -3,62 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TURISMO E AVENTURAS</title>
+  <title>Comunidade Nova Veneza</title>
   <style>
     body {
-      font-family: Geneva, sans-serif;
-      background-color: #f0f4f8;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #fff;
       padding: 20px;
-    }
-
-    h1 {
       text-align: center;
-      color: #2c3e50;
-      margin-bottom: 40px;
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    .container {
+    .grid-container {
+      background-color: mediumvioletred;
+      padding: 40px 20px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
     .card {
-      width: 300px;
-      background-color: #ffffff;
+      background: white;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      text-align: left;
+      text-align: center;
+      width: 250px;
     }
 
     .card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
+      display: block;
     }
 
-    .descricao {
-      padding: 15px;
-    }
-
-    .descricao h2 {
-      margin: 0 0 10px;
-      font-size: 18px;
-      color: #333;
-    }
-
-    .descricao p {
-      font-size: 14px;
-      color: #555;
+    .card a {
+      display: block;
+      padding: 10px;
+      color: purple;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    NOVA VENEZA CAPANEMA-PR
+  </header>
+
+  <section class="grid-container">
+    
     <h1>TURISMO E AVENTURAS</h1>
 
     <div class="paisagem">
