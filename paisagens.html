@@ -7,38 +7,39 @@
   <style>
     body {
       font-family: Geneva, sans-serif;
-      margin: 50px;
       background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
     }
 
     h1 {
-      color: #2c3e50;
       text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
     }
 
-    .galeria {
+    .container {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
+      gap: 20px;
     }
 
-    .paisagem {
+    .card {
+      width: 300px;
       background-color: #ffffff;
-      border-radius: 8px;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       overflow: hidden;
-      width: 300px;
-      flex-shrink: 0;
       display: flex;
       flex-direction: column;
+      text-align: left;
     }
 
-    .paisagem img {
+    .card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
-      display: block;
     }
 
     .descricao {
@@ -46,7 +47,7 @@
     }
 
     .descricao h2 {
-      margin-top: 0;
+      margin: 0 0 10px;
       font-size: 18px;
       color: #333;
     }
@@ -58,7 +59,6 @@
   </style>
 </head>
 <body>
-
     <h1>TURISMO E AVENTURAS</h1>
 
     <div class="paisagem">
