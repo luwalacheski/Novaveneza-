@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Comunidade - Nova Veneza</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #fff;
+      color: #111;
     }
 
     header {
       background-color: #8B0000;
       color: white;
-      padding: 20px 0;
+      padding: 20px;
       text-align: center;
     }
 
     .container {
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    .card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      max-width: 400px;
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #111;
+    }
+
+    .descricao {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    .imagem {
       width: 100%;
-      text-align: center;
-      overflow: hidden;
     }
 
-    .card img {
+    .imagem img {
       width: 100%;
       height: auto;
       display: block;
+      border-radius: 5px;
     }
 
-    .card .descricao {
-      padding: 20px;
-      font-size: 16px;
-      color: #333;
-    }
-
-    .card h2 {
-      color: #8B0000;
-      margin: 10px 0;
-    }
-
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       .container {
-        padding: 20px 10px;
+        padding: 0 15px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .descricao {
+        font-size: 15px;
       }
     }
   </style>
@@ -65,13 +72,15 @@
   </header>
 
   <div class="container">
-    <div class="card">
+    <h2>Igreja da Comunidade</h2>
+    <p class="descricao">
+      Esta é a igreja da comunidade de Nova Veneza, localizada no interior de Capanema-PR.
+      Um ponto de encontro para celebrações religiosas e eventos tradicionais da região. 
+      O local proporciona momentos de fé, união e convivência entre os moradores, sendo um símbolo de tradição e espiritualidade da comunidade.
+    </p>
+
+    <div class="imagem">
       <img src="IGREJA.jpg" alt="Igreja da Comunidade">
-      <h2>Igreja da Comunidade</h2>
-      <div class="descricao">
-        Esta é a igreja da comunidade de Nova Veneza, localizada no interior de Capanema-PR.
-        Um ponto de encontro para celebrações religiosas e eventos tradicionais da região.
-      </div>
     </div>
   </div>
 
