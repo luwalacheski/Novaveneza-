@@ -7,7 +7,16 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
-      padding: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* ✅ IMAGEM DE CAPA EM FULL WIDTH */
+    .imagem-capa {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
     }
 
     .ponto-onibus {
@@ -16,16 +25,7 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       padding: 20px;
       max-width: 900px;
-      margin: auto;
-    }
-
-    .capa img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      object-fit: cover;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
-      margin-bottom: 20px;
+      margin: 20px auto;
     }
 
     h1, h2 {
@@ -53,12 +53,11 @@
   </style>
 </head>
 <body>
-  <div class="ponto-onibus">
-    <!-- Capa -->
-    <div class="capa">
-      <img src="NOME-DA-SUA-IMAGEM-DE-CAPA.jpg" alt="Imagem de capa do ponto de ônibus">
-    </div>
 
+  <!-- ✅ IMAGEM DE CAPA FORA DO CONTAINER PRINCIPAL -->
+  <img src="IMG-20250811-WA0023.jpg" alt="Imagem de capa do ponto de ônibus" class="imagem-capa">
+
+  <div class="ponto-onibus">
     <h1>Ponto de Ônibus: Linha Flor Da Serra</h1>
     <p><strong>Localização:</strong> Flor da Serra, Capanema - PR</p>
 
@@ -79,8 +78,9 @@
     <div class="galeria">
       <img src="IMG-20250811-WA0025.jpg" alt="Vista frontal do ponto de ônibus">
       <img src="IMG-20250811-WA0024 (1).jpg" alt="Ponto de ônibus ao entardecer">
-      <img src="IMG-20250811-WA0024 (1).jpg" alt="Ponto de Ônibus">
+      <img src="IMG-20250811-WA0023.jpg" alt="Ponto de ônibus">
     </div>
   </div>
+
 </body>
 </html>
