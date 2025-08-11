@@ -9,31 +9,37 @@
       background-color: #f2f2f2;
       padding: 20px;
     }
+
     .ponto-onibus {
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       padding: 20px;
-      max-width: 700px;
+      max-width: 900px;
       margin: auto;
     }
+
     h1, h2 {
       color: #2c3e50;
     }
+
     ul {
       padding-left: 20px;
     }
+
     .galeria {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr); /* Agora com 3 imagens */
       gap: 10px;
       margin-top: 20px;
     }
+
     .galeria img {
       width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      object-fit: cover;
     }
   </style>
 </head>
@@ -59,6 +65,7 @@
     <div class="galeria">
       <img src="IMG-20250811-WA0025.jpg" alt="Vista frontal do ponto de ônibus">
       <img src="IMG-20250811-WA0024 (1).jpg" alt="Ponto de ônibus ao entardecer">
+      <img src="IMG-20250811-WA0025.jpg" alt="Ponto de Ônibus">
     </div>
   </div>
 </body>
