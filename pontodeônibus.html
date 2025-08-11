@@ -29,13 +29,13 @@
       gap: 10px;
       margin-top: 20px;
     }
-    /* Novo estilo para imagens tipo "Comunidade" */
     .foto-container {
       width: 100%;
-      height: 250px; /* Ajuste conforme necessário */
+      height: 250px;
       overflow: hidden;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      background-color: #f6f6f6;
     }
     .foto-container img {
       width: 100%;
@@ -44,6 +44,13 @@
       display: block;
     }
   </style>
+  <script>
+    function fallbackImage(img) {
+      // imagem de capa padrão (substitua pelo caminho da sua capa real)
+      img.src ="ponto2.jpg";
+      img.onerror = null; // evita loop se a capa também não carregar
+    }
+  </script>
 </head>
 <body>
   <div class="ponto-onibus">
@@ -66,10 +73,10 @@
     <h2>Fotos do Ponto</h2>
     <div class="galeria">
       <div class="foto-container">
-        <img src="ponto1.jpg" alt="Vista frontal do ponto de ônibus">
+        <img src="ponto1.jpg" alt="Vista frontal do ponto de ônibus" onerror="fallbackImage(this)">
       </div>
       <div class="foto-container">
-        <img src="ponto2.jpg" alt="Ponto de ônibus ao entardecer">
+        <img src="ponto2.jpg" alt="Ponto de ônibus ao entardecer" onerror="fallbackImage(this)">
       </div>
     </div>
   </div>
