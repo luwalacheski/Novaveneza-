@@ -8,59 +8,49 @@
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
       padding: 20px;
-      margin: 0;
     }
-
     .ponto-onibus {
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       padding: 20px;
-      max-width: 900px;
+      max-width: 700px;
       margin: auto;
     }
-
-    /* ✅ ESTILO DA IMAGEM DE CAPA DENTRO DA CAIXA */
-    .imagem-capa {
-      width: 100%;
-      height: 250px;
-      border-radius: 10px;
-      object-fit: cover;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
-      margin-bottom: 20px;
-      display: block;
-    }
-
     h1, h2 {
       color: #2c3e50;
     }
-
     ul {
       padding-left: 20px;
     }
-
     .galeria {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
       margin-top: 20px;
     }
-
     .galeria img {
       width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    /* Estilo da imagem de capa no topo */
+    .imagem-capa {
+      width: 100%;
+      height: 200px;
       object-fit: cover;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+      margin-bottom: 20px;
+      display: block;
     }
   </style>
 </head>
 <body>
-
   <div class="ponto-onibus">
-    
-    <!-- ✅ IMAGEM DE CAPA DENTRO DA CAIXA -->
-    <img src="IMG-20250811-WA0023.jpg" alt="Imagem de capa do ponto de ônibus" class="imagem-capa">
+    <!-- Imagem de capa -->
+    <img src="IMG-20250811-WA0024 (1).jpg" alt="Imagem de capa do ponto de ônibus" class="imagem-capa">
 
     <h1>Ponto de Ônibus: Linha Flor Da Serra</h1>
     <p><strong>Localização:</strong> Flor da Serra, Capanema - PR</p>
@@ -82,9 +72,7 @@
     <div class="galeria">
       <img src="IMG-20250811-WA0025.jpg" alt="Vista frontal do ponto de ônibus">
       <img src="IMG-20250811-WA0024 (1).jpg" alt="Ponto de ônibus ao entardecer">
-      <img src="IMG-20250811-WA0024 (1).jpg" alt="Ponto de ônibus">
     </div>
   </div>
-
 </body>
 </html>
