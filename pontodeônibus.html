@@ -19,6 +19,15 @@
       margin: auto;
     }
 
+    .capa img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
     h1, h2 {
       color: #2c3e50;
     }
@@ -29,7 +38,7 @@
 
     .galeria {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Agora com 3 imagens */
+      grid-template-columns: repeat(3, 1fr);
       gap: 10px;
       margin-top: 20px;
     }
@@ -45,6 +54,11 @@
 </head>
 <body>
   <div class="ponto-onibus">
+    <!-- Capa -->
+    <div class="capa">
+      <img src="NOME-DA-SUA-IMAGEM-DE-CAPA.jpg" alt="Imagem de capa do ponto de ônibus">
+    </div>
+
     <h1>Ponto de Ônibus: Linha Flor Da Serra</h1>
     <p><strong>Localização:</strong> Flor da Serra, Capanema - PR</p>
 
@@ -65,7 +79,7 @@
     <div class="galeria">
       <img src="IMG-20250811-WA0025.jpg" alt="Vista frontal do ponto de ônibus">
       <img src="IMG-20250811-WA0024 (1).jpg" alt="Ponto de ônibus ao entardecer">
-      <img src="IMG-20250811-WA0025.jpg" alt="Ponto de Ônibus">
+      <img src="IMG-20250811-WA0024 (1).jpg" alt="Ponto de Ônibus">
     </div>
   </div>
 </body>
