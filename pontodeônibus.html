@@ -1,63 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Ponto de Ônibus - Linha Flor Da Serra</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ponto de Ônibus - Linha Flor da Serra</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      padding: 20px;
-    }
-    .ponto-onibus {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #111;
+    }
+
+    header {
+      background-color: #fff;
+      color: #b51c1c;
       padding: 20px;
-      max-width: 700px;
-      margin: auto;
+      text-align: center;
     }
-    h1, h2 {
-      color: #2c3e50;
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #111;
+    }
+
+    .descricao {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
     ul {
+      margin-bottom: 20px;
       padding-left: 20px;
     }
+
     .galeria {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-    .foto-container {
-      width: 100%;
-      height: 250px;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-      background-color: #f6f6f6;
+
+    .galeria img {
+      width: 45%;
+      min-width: 280px;
+      border-radius: 5px;
+      height: auto;
     }
-    .foto-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 15px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .descricao {
+        font-size: 15px;
+      }
+
+      .galeria img {
+        width: 100%;
+      }
     }
   </style>
-  <script>
-    function fallbackImage(img) {
-      // imagem de capa padrão (substitua pelo caminho da sua capa real)
-      img.src ="ponto1.jpg";
-      img.onerror = null; // evita loop se a capa também não carregar
-    }
-  </script>
 </head>
 <body>
-  <div class="ponto-onibus">
-    <h1>Ponto de Ônibus: Linha Flor Da Serra</h1>
-    <p><strong>Localização:</strong> Flor da Serra, Capanema - PR</p>
 
-    <p><strong>Linhas Atendidas:</strong></p>
+  <header>
+    <h1>Ponto de Ônibus: Linha Flor da Serra</h1>
+  </header>
+
+  <div class="container">
+    <h2>Informações</h2>
+    <p class="descricao">
+      Este é o ponto de ônibus da Linha Flor da Serra, localizado em Flor da Serra, Capanema - PR. 
+      Ele atende diversas linhas que conectam a comunidade a outros pontos importantes da cidade e região, 
+      facilitando o transporte diário dos moradores.
+    </p>
+
+    <h2>Linhas Atendidas</h2>
     <ul>
       <li>São Pedro</li>
       <li>Centro</li>
@@ -65,20 +99,17 @@
       <li>Santa Ana</li>
     </ul>
 
-    <p><strong>Horários de Funcionamento:</strong></p>
+    <h2>Horários de Funcionamento</h2>
     <ul>
       <li>Seg a Sex: 05:00 às 18:30</li>
     </ul>
 
     <h2>Fotos do Ponto</h2>
     <div class="galeria">
-      <div class="foto-container">
-        <img src="ponto1.jpg" alt="Vista frontal do ponto de ônibus" onerror="fallbackImage(this)">
-      </div>
-      <div class="foto-container">
-        <img src="ponto2.jpg" alt="Ponto de ônibus ao entardecer" onerror="fallbackImage(this)">
-      </div>
+      <img src="ponto1.jpg" alt="Vista frontal do ponto de ônibus">
+      <img src="ponto2.jpg" alt="Ponto de ônibus ao entardecer">
     </div>
   </div>
+
 </body>
 </html>
