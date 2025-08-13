@@ -37,7 +37,7 @@ body {
 .button.secondary {
     background-color: #ffc1d5;
     color: #DDA0DD;
-    border: 2px solid #007bff;
+    border: 2px solid #ff1493;
 }
 
 .button.secondary:hover {
